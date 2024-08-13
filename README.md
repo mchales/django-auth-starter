@@ -16,7 +16,7 @@ Project does not include:
 - Cron job to remove accounts which did not verify email, or other method to handle this edge case
 - Cron job to remove expired and blacklisted tokens with `flushexpiredtokens`
 - A frontend (apart from the one `django-rest-framework` provides)
-- Docker configuration
+- Docker configuration (will be added in the future)
 
 ## Getting Started
 
