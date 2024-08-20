@@ -25,6 +25,7 @@ Project does not include:
    1. Using Conda `conda create --name your_env_name python=3.9`
 3. Install packages to python environment:
    1. `pip install -r requirements/development.txt`
+   2. If not using windows, remove pywin32==305 from development.txt
 4. Populate `.env.development` file
    1. Generate secret key (see possible option below)
    2. Configure email SMTP host or disable Djoser email verification
@@ -34,7 +35,8 @@ from django.core.management.utils import get_random_secret_key SECRET_KEY = get_
 ```
 
 5. Run project with `python manage.py runserver`
-6. Run tests with `pytest`
+6. Run `python manage.py migrate`
+7. Run tests with `pytest`
 
 ## Extra
 
